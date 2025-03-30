@@ -1,12 +1,12 @@
 import { IModule } from '@common/modules/IModule';
 import { HTTPMETODO, Ruta } from '@common/modules/Ruta';
-import RutearRouter from './controllers/RuteoRouter';
+import RuteoAuxiliarRouter from './controllers/RuteoAuxiliarRouter';
 import createDependencyContainer from '@common/dependencies/DependencyContainer';
 import { createDependencies } from './dependencies/Dependencies';
 
 export default class RuteoAuxiliarModules implements IModule {
     private readonly moduloRuta = '/';
-    private readonly controller = new RutearRouter();
+    private readonly controller = new RuteoAuxiliarRouter();
 
     constructor() {
         createDependencies();
