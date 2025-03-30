@@ -9,7 +9,7 @@ import { RedisClientesConnection } from '@infrastructure/redis/adapter/redis';
 import IEnviosRedis from '@infrastructure/redis/interfaces/IClienteRedis';
 import { EnviosRedis } from '@infrastructure/redis/EnviosRedis';
 import { IGotTokenApi } from '@infrastructure/client/got/autenticacion/interfaces';
-import { GotTokenApi } from '@infrastructure/client/got/autenticacion/GotValidarURL';
+import { GotTokenApi } from '@infrastructure/client/got/autenticacion/GotToken';
 import { IRutaRepository } from '../domain/repositories/RutaRepository';
 import { RutaDAO } from '@infrastructure/bd/postgresql/dao/RutaDAO';
 import { IEnvioRepository } from '../domain/repositories/EnvioRepository';

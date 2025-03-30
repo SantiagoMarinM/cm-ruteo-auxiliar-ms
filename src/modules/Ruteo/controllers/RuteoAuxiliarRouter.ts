@@ -14,7 +14,7 @@ import { BodyConsultaRutaSchema, BodyValidarEquipoSchema, ValidarTokenSchema } f
 import Result from '@common/http/Result';
 
 @injectable()
-export default class RutearRouter {
+export default class RuteoAuxiliarRouter {
     async validarEquipoParaRuta(req: CustomRequest): Promise<Response<ResponseMethod<string>>> {
         const headers = req.headers as Record<string, string>;
         const logger = req.logData;
