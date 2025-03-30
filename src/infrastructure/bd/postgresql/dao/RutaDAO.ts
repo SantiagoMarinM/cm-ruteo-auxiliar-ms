@@ -17,10 +17,11 @@ export class RutaDAO implements IRutaRepository {
             const response = await this.db.oneOrNone(query);
             return response ? true : false;
         } catch (error) {
-            console.log(error);
-            throw new UNAUTHORIZED('Error al validar si el equipo ya ruteó', '500', error.message);
+            const message = error instanceof Error ? error.message : 'Error inesperado';
+            throw new UNAUTHORIZED('Error al validar si el equipo ya ruteó', '500', message);
         }
     }
+
     async obtenerRutas(
         codigo_equipo: string,
         terminal: number,
@@ -31,6 +32,9 @@ export class RutaDAO implements IRutaRepository {
             const response = await this.db.manyOrNone(query);
             return response;
         } catch (error) {
+            if (error instanceof Error) {
+                throw new PostgresError('Error al obtener rutas');
+            }
             throw new PostgresError('Error al obtener rutas');
         }
     }
