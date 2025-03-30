@@ -59,3 +59,10 @@ Este módulo gestiona las operaciones relacionadas con la validación de usuario
 - La lógica de negocio está desacoplada del transporte HTTP.
 - Redis se usa como cache intermedio para los envíos según prioridad.
 - Pub/Sub se utiliza para emitir eventos relacionados con la validación de equipos.
+
+---
+
+## Autor y mantenimiento
+
+- Desarrollado como parte de examen de seniority para la empresa Coordinadora Mercantil.
+- Se recomienda utilizar yarn como gestor de paquetes y versiones de Node por encima de la 18.
