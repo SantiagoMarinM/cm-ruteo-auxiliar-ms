@@ -57,17 +57,13 @@ export class FastifyServer implements IServer {
             const incommingData = this.buildDataLog(req);
             const requestLogs = (req as any).logData; // Aquí están los logs acumulados
             console.log(
-                JSON.stringify(
-                    {
-                        statusCode: reply.statusCode,
-                        RESPONSE: req.url,
-                        incommingData,
-                        requestLogs,
-                        payloadResponse,
-                    },
-                    null,
-                    2,
-                ),
+                JSON.stringify({
+                    statusCode: reply.statusCode,
+                    RESPONSE: req.url,
+                    incommingData,
+                    requestLogs,
+                    payloadResponse,
+                }),
             );
         });
     };
