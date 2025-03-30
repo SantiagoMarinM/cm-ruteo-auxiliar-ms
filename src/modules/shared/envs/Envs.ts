@@ -13,15 +13,15 @@ if (envFile) {
 export const MANTIENE_ESTADO_ANTERIOR = 2;
 
 export const ENV = {
-    POSTGRES_HOST: process.env.POSTGRES_HOST ?? 'dbcmtest.loc',
-    DOMAIN: process.env.DOMAIN ?? 'mio',
+    POSTGRES_HOST: process.env.POSTGRES_HOST ?? 'unadb',
+    DOMAIN: process.env.DOMAIN ?? 'examen',
     SERVICE_NAME: process.env.SERVICE_NAME ?? 'cm-ruteo-auxiliar-ms',
-    GCP_PROJECT: process.env.GCP_PROJECT ?? 'cm-mio-dev',
+    GCP_PROJECT: process.env.GCP_PROJECT ?? 'unproyecto',
     ENV: process.env.ENV ?? 'local',
     PG_PORT: process.env.PG_PORT ?? '5434',
-    POSTGRES_USER: process.env.POSTGRES_USER ?? 'mio_user_default',
-    POSTGRES_PASS: process.env.POSTGRES_PASS ?? 'cualquier_cosa',
-    POSTGRES_DATABASE: process.env.POSTGRES_DATABASE ?? 'mio',
+    POSTGRES_USER: process.env.POSTGRES_USER ?? 'usuarioexamen',
+    POSTGRES_PASS: process.env.POSTGRES_PASS ?? 'passexamen',
+    POSTGRES_DATABASE: process.env.POSTGRES_DATABASE ?? 'dbcualquiera',
     PORT: process.env.PORT ?? '8080',
     URL_API_TOKEN: process.env.URL_API_TOKEN ?? '',
     ALLOWED_ORIGIN: process.env.ALLOWED_ORIGIN ?? 'localhost',
@@ -29,8 +29,6 @@ export const ENV = {
     REDIS_HOST: process.env.REDIS_HOST ?? 'localhost',
     REDIS_PORT: process.env.REDIS_PORT ?? '6379',
     DIAS_REDIS: process.env.DIAS_REDIS ?? '1',
-    LLAVE_SECRETA: process.env.LLAVE_SECRETA ?? 'HolaEstaEsLaSecretKeyParaGenerarElTokenEnAmbienteDeTest',
-    EXPIRE_TOKEN: process.env.EXPIRE_TOKEN ?? '1h',
 };
 
 if (!envFile) validateEnvs(ENV);
