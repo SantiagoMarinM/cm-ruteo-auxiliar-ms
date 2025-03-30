@@ -2,7 +2,7 @@
     "name": "cm-ruteo-auxiliar-ms",
     "version": "1.0.0",
     "main": "dist/index.js",
-    "description": "Servicio principal para organizar rutas para los equipos de Coordinadora",
+    "description": "Servicio de utilidades de ruteo para el examen de Senior de Coordinadora",
     "license": "UNLICENSED",
     "private": true,
     "author": {
