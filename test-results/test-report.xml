@@ -1,85 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="31" failures="0" time="7.435">
-  <testsuite name="RutaDAO" errors="0" failures="0" skipped="0" timestamp="2025-03-30T15:01:08" time="3.481" tests="3">
-    <testcase classname="RutaDAO debería retornar true si hay respuesta en validarEquipoRuteado" name="RutaDAO debería retornar true si hay respuesta en validarEquipoRuteado" time="0.002">
+<testsuites name="jest tests" tests="31" failures="0" time="10.42">
+  <testsuite name="EquipoVehiculoDAO" errors="0" failures="0" skipped="0" timestamp="2025-03-30T17:14:36" time="4.418" tests="3">
+    <testcase classname="EquipoVehiculoDAO debería retornar el objeto de equipo-vehículo si existe" name="EquipoVehiculoDAO debería retornar el objeto de equipo-vehículo si existe" time="0.002">
+    </testcase>
+    <testcase classname="EquipoVehiculoDAO debería retornar null si no hay resultado" name="EquipoVehiculoDAO debería retornar null si no hay resultado" time="0.005">
+    </testcase>
+    <testcase classname="EquipoVehiculoDAO debería lanzar UNAUTHORIZED si ocurre un error en la consulta" name="EquipoVehiculoDAO debería lanzar UNAUTHORIZED si ocurre un error en la consulta" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="GotTokenApi" errors="0" failures="0" skipped="0" timestamp="2025-03-30T17:14:36" time="4.62" tests="4">
+    <testcase classname="GotTokenApi debería retornar true si la respuesta indica autorizado" name="GotTokenApi debería retornar true si la respuesta indica autorizado" time="0.002">
+    </testcase>
+    <testcase classname="GotTokenApi debería retornar false si la respuesta indica no autorizado" name="GotTokenApi debería retornar false si la respuesta indica no autorizado" time="0">
+    </testcase>
+    <testcase classname="GotTokenApi debería retornar false si ocurre un error en la petición" name="GotTokenApi debería retornar false si ocurre un error en la petición" time="0">
+    </testcase>
+    <testcase classname="GotTokenApi debería eliminar headers prohibidos en refactorHeaders" name="GotTokenApi debería eliminar headers prohibidos en refactorHeaders" time="0.007">
+    </testcase>
+  </testsuite>
+  <testsuite name="ObtenerRutasUseCase" errors="0" failures="0" skipped="0" timestamp="2025-03-30T17:14:36" time="4.74" tests="2">
+    <testcase classname="ObtenerRutasUseCase debería retornar rutas correctamente" name="ObtenerRutasUseCase debería retornar rutas correctamente" time="0.005">
+    </testcase>
+    <testcase classname="ObtenerRutasUseCase debería lanzar CustomError si ocurre un error en el repositorio" name="ObtenerRutasUseCase debería lanzar CustomError si ocurre un error en el repositorio" time="0.011">
+    </testcase>
+  </testsuite>
+  <testsuite name="RutaDAO" errors="0" failures="0" skipped="0" timestamp="2025-03-30T17:14:36" time="4.707" tests="3">
+    <testcase classname="RutaDAO debería retornar true si hay respuesta en validarEquipoRuteado" name="RutaDAO debería retornar true si hay respuesta en validarEquipoRuteado" time="0.001">
     </testcase>
     <testcase classname="RutaDAO debería retornar false si no hay respuesta en validarEquipoRuteado" name="RutaDAO debería retornar false si no hay respuesta en validarEquipoRuteado" time="0">
     </testcase>
     <testcase classname="RutaDAO debería retornar rutas correctamente desde obtenerRutas" name="RutaDAO debería retornar rutas correctamente desde obtenerRutas" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="GotTokenApi" errors="0" failures="0" skipped="0" timestamp="2025-03-30T15:01:08" time="3.66" tests="4">
-    <testcase classname="GotTokenApi debería retornar true si la respuesta indica autorizado" name="GotTokenApi debería retornar true si la respuesta indica autorizado" time="0.001">
+  <testsuite name="EnvioDAO" errors="0" failures="0" skipped="0" timestamp="2025-03-30T17:14:41" time="0.352" tests="2">
+    <testcase classname="EnvioDAO debería ejecutar correctamente sincronizacionEnvios" name="EnvioDAO debería ejecutar correctamente sincronizacionEnvios" time="0.017">
     </testcase>
-    <testcase classname="GotTokenApi debería retornar false si la respuesta indica no autorizado" name="GotTokenApi debería retornar false si la respuesta indica no autorizado" time="0">
-    </testcase>
-    <testcase classname="GotTokenApi debería retornar false si ocurre un error en la petición" name="GotTokenApi debería retornar false si ocurre un error en la petición" time="0.001">
-    </testcase>
-    <testcase classname="GotTokenApi debería eliminar headers prohibidos en refactorHeaders" name="GotTokenApi debería eliminar headers prohibidos en refactorHeaders" time="0">
+    <testcase classname="EnvioDAO debería lanzar un CustomError si la query falla" name="EnvioDAO debería lanzar un CustomError si la query falla" time="0.014">
     </testcase>
   </testsuite>
-  <testsuite name="EnvioDAO" errors="0" failures="0" skipped="0" timestamp="2025-03-30T15:01:11" time="0.223" tests="2">
-    <testcase classname="EnvioDAO debería ejecutar correctamente sincronizacionEnvios" name="EnvioDAO debería ejecutar correctamente sincronizacionEnvios" time="0">
-    </testcase>
-    <testcase classname="EnvioDAO debería lanzar un CustomError si la query falla" name="EnvioDAO debería lanzar un CustomError si la query falla" time="0.005">
+  <testsuite name="TareaUseCase" errors="0" failures="0" skipped="0" timestamp="2025-03-30T17:14:36" time="4.878" tests="1">
+    <testcase classname="TareaUseCase debería ejecutar correctamente el proceso y actualizar prioridades" name="TareaUseCase debería ejecutar correctamente el proceso y actualizar prioridades" time="0.017">
     </testcase>
   </testsuite>
-  <testsuite name="ObtenerRutasUseCase" errors="0" failures="0" skipped="0" timestamp="2025-03-30T15:01:08" time="3.944" tests="2">
-    <testcase classname="ObtenerRutasUseCase debería retornar rutas correctamente" name="ObtenerRutasUseCase debería retornar rutas correctamente" time="0.006">
-    </testcase>
-    <testcase classname="ObtenerRutasUseCase debería lanzar CustomError si ocurre un error en el repositorio" name="ObtenerRutasUseCase debería lanzar CustomError si ocurre un error en el repositorio" time="0.01">
-    </testcase>
-  </testsuite>
-  <testsuite name="RuteoAuxiliarRouter" errors="0" failures="0" skipped="0" timestamp="2025-03-30T15:01:08" time="3.992" tests="7">
-    <testcase classname="RuteoAuxiliarRouter validarEquipoParaRuta debe retornar respuesta exitosa cuando ValidarUsuarioUseCase.execute se resuelve" name="RuteoAuxiliarRouter validarEquipoParaRuta debe retornar respuesta exitosa cuando ValidarUsuarioUseCase.execute se resuelve" time="0.006">
+  <testsuite name="RuteoAuxiliarRouter" errors="0" failures="0" skipped="0" timestamp="2025-03-30T17:14:36" time="4.963" tests="7">
+    <testcase classname="RuteoAuxiliarRouter validarEquipoParaRuta debe retornar respuesta exitosa cuando ValidarUsuarioUseCase.execute se resuelve" name="RuteoAuxiliarRouter validarEquipoParaRuta debe retornar respuesta exitosa cuando ValidarUsuarioUseCase.execute se resuelve" time="0.002">
     </testcase>
     <testcase classname="RuteoAuxiliarRouter validarEquipoParaRuta debe retornar respuesta de error cuando ValidarUsuarioUseCase.execute lanza error" name="RuteoAuxiliarRouter validarEquipoParaRuta debe retornar respuesta de error cuando ValidarUsuarioUseCase.execute lanza error" time="0.001">
     </testcase>
-    <testcase classname="RuteoAuxiliarRouter obtenerRutas debe retornar rutas correctamente cuando ObtenerRutasUseCase.execute se resuelve" name="RuteoAuxiliarRouter obtenerRutas debe retornar rutas correctamente cuando ObtenerRutasUseCase.execute se resuelve" time="0.004">
+    <testcase classname="RuteoAuxiliarRouter obtenerRutas debe retornar rutas correctamente cuando ObtenerRutasUseCase.execute se resuelve" name="RuteoAuxiliarRouter obtenerRutas debe retornar rutas correctamente cuando ObtenerRutasUseCase.execute se resuelve" time="0.001">
     </testcase>
     <testcase classname="RuteoAuxiliarRouter obtenerRutas debe retornar error cuando ObtenerRutasUseCase.execute falla" name="RuteoAuxiliarRouter obtenerRutas debe retornar error cuando ObtenerRutasUseCase.execute falla" time="0">
     </testcase>
-    <testcase classname="RuteoAuxiliarRouter recalcularPrioridades debe retornar respuesta exitosa cuando TareaUseCase.execute se resuelve" name="RuteoAuxiliarRouter recalcularPrioridades debe retornar respuesta exitosa cuando TareaUseCase.execute se resuelve" time="0.001">
+    <testcase classname="RuteoAuxiliarRouter recalcularPrioridades debe retornar respuesta exitosa cuando TareaUseCase.execute se resuelve" name="RuteoAuxiliarRouter recalcularPrioridades debe retornar respuesta exitosa cuando TareaUseCase.execute se resuelve" time="0.005">
     </testcase>
-    <testcase classname="RuteoAuxiliarRouter recalcularPrioridades debe retornar error cuando TareaUseCase.execute falla" name="RuteoAuxiliarRouter recalcularPrioridades debe retornar error cuando TareaUseCase.execute falla" time="0">
+    <testcase classname="RuteoAuxiliarRouter recalcularPrioridades debe retornar error cuando TareaUseCase.execute falla" name="RuteoAuxiliarRouter recalcularPrioridades debe retornar error cuando TareaUseCase.execute falla" time="0.001">
     </testcase>
-    <testcase classname="RuteoAuxiliarRouter eliminarRedis debe llamar a flushAll y retornar respuesta exitosa" name="RuteoAuxiliarRouter eliminarRedis debe llamar a flushAll y retornar respuesta exitosa" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="EnviosRedis" errors="0" failures="0" skipped="0" timestamp="2025-03-30T15:01:12" time="0.295" tests="2">
-    <testcase classname="EnviosRedis debería guardar registros en Redis correctamente" name="EnviosRedis debería guardar registros en Redis correctamente" time="0">
-    </testcase>
-    <testcase classname="EnviosRedis debería eliminar todos los datos de Redis con flushAll" name="EnviosRedis debería eliminar todos los datos de Redis con flushAll" time="0">
+    <testcase classname="RuteoAuxiliarRouter eliminarRedis debe llamar a flushAll y retornar respuesta exitosa" name="RuteoAuxiliarRouter eliminarRedis debe llamar a flushAll y retornar respuesta exitosa" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="EquipoVehiculoDAO" errors="0" failures="0" skipped="0" timestamp="2025-03-30T15:01:08" time="4.053" tests="3">
-    <testcase classname="EquipoVehiculoDAO debería retornar el objeto de equipo-vehículo si existe" name="EquipoVehiculoDAO debería retornar el objeto de equipo-vehículo si existe" time="0.005">
+  <testsuite name="EnviosRedis" errors="0" failures="0" skipped="0" timestamp="2025-03-30T17:14:41" time="0.267" tests="2">
+    <testcase classname="EnviosRedis debería guardar registros en Redis correctamente" name="EnviosRedis debería guardar registros en Redis correctamente" time="0.001">
     </testcase>
-    <testcase classname="EquipoVehiculoDAO debería retornar null si no hay resultado" name="EquipoVehiculoDAO debería retornar null si no hay resultado" time="0">
-    </testcase>
-    <testcase classname="EquipoVehiculoDAO debería lanzar UNAUTHORIZED si ocurre un error en la consulta" name="EquipoVehiculoDAO debería lanzar UNAUTHORIZED si ocurre un error en la consulta" time="0.001">
+    <testcase classname="EnviosRedis debería eliminar todos los datos de Redis con flushAll" name="EnviosRedis debería eliminar todos los datos de Redis con flushAll" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="TareaUseCase" errors="0" failures="0" skipped="0" timestamp="2025-03-30T15:01:08" time="4.036" tests="1">
-    <testcase classname="TareaUseCase debería ejecutar correctamente el proceso y actualizar prioridades" name="TareaUseCase debería ejecutar correctamente el proceso y actualizar prioridades" time="0.004">
-    </testcase>
-  </testsuite>
-  <testsuite name="ValidarUsuarioUseCase" errors="0" failures="0" skipped="0" timestamp="2025-03-30T15:01:08" time="4.293" tests="5">
+  <testsuite name="ValidarUsuarioUseCase" errors="0" failures="0" skipped="0" timestamp="2025-03-30T17:14:36" time="5.001" tests="5">
     <testcase classname="ValidarUsuarioUseCase debería retornar mensaje de éxito si todo sale bien" name="ValidarUsuarioUseCase debería retornar mensaje de éxito si todo sale bien" time="0.002">
     </testcase>
     <testcase classname="ValidarUsuarioUseCase debería lanzar error si el token es inválido" name="ValidarUsuarioUseCase debería lanzar error si el token es inválido" time="0.005">
     </testcase>
-    <testcase classname="ValidarUsuarioUseCase debería lanzar error si el equipo está inactivo" name="ValidarUsuarioUseCase debería lanzar error si el equipo está inactivo" time="0">
+    <testcase classname="ValidarUsuarioUseCase debería lanzar error si el equipo está inactivo" name="ValidarUsuarioUseCase debería lanzar error si el equipo está inactivo" time="0.001">
     </testcase>
-    <testcase classname="ValidarUsuarioUseCase debería lanzar error si el vehículo está inactivo" name="ValidarUsuarioUseCase debería lanzar error si el vehículo está inactivo" time="0.001">
+    <testcase classname="ValidarUsuarioUseCase debería lanzar error si el vehículo está inactivo" name="ValidarUsuarioUseCase debería lanzar error si el vehículo está inactivo" time="0">
     </testcase>
-    <testcase classname="ValidarUsuarioUseCase debería lanzar error si el equipo ya está ruteado" name="ValidarUsuarioUseCase debería lanzar error si el equipo ya está ruteado" time="0">
+    <testcase classname="ValidarUsuarioUseCase debería lanzar error si el equipo ya está ruteado" name="ValidarUsuarioUseCase debería lanzar error si el equipo ya está ruteado" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="RuteoAuxiliarModules" errors="0" failures="0" skipped="0" timestamp="2025-03-30T15:01:12" time="0.785" tests="2">
-    <testcase classname="RuteoAuxiliarModules debería retornar la ruta base &quot;/&quot;" name="RuteoAuxiliarModules debería retornar la ruta base &quot;/&quot;" time="0">
+  <testsuite name="RuteoAuxiliarModules" errors="0" failures="0" skipped="0" timestamp="2025-03-30T17:14:41" time="0.899" tests="2">
+    <testcase classname="RuteoAuxiliarModules debería retornar la ruta base &quot;/&quot;" name="RuteoAuxiliarModules debería retornar la ruta base &quot;/&quot;" time="0.001">
     </testcase>
-    <testcase classname="RuteoAuxiliarModules debería retornar las rutas correctamente configuradas" name="RuteoAuxiliarModules debería retornar las rutas correctamente configuradas" time="0.001">
+    <testcase classname="RuteoAuxiliarModules debería retornar las rutas correctamente configuradas" name="RuteoAuxiliarModules debería retornar las rutas correctamente configuradas" time="0">
     </testcase>
   </testsuite>
 </testsuites>
